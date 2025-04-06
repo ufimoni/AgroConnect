@@ -8,3 +8,8 @@ This is a planting application just for planting.
 ###### Note 
 you can reach out to me @ https://github.com/ufimoni
 
+1. when you clone this file
+2. create a front end and backend.
+3. cd frontend npx create-react-app client
+4. cd backend, go to terminal and type npm init and fill in all the details.
+

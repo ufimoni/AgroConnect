@@ -1,0 +1,161 @@
+========================================================================================
+This is Bertcode.py Agroconnect application
+this file is give us the guide to the application
+
+Time Frame for this Application.
+Task1.
+Get The means of Communications in this system; How is Communication done in this system.
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+agro-farm-frontend/
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── assets/                  # Static assets (images, icons, etc.)
+│
+│   ├── components/              # Shared UI components
+│   │   ├── Header.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── PrivateRoute.jsx
+│   │   └── Loader.jsx
+│
+│   ├── pages/                   # All route-based pages
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── NotFound.jsx
+│   │   └── Dashboard.jsx
+│
+│   ├── features/                # Role-specific directories
+│   │   ├── farmer/
+│   │   │   ├── CropStatus.jsx
+│   │   │   ├── IrrigationControl.jsx
+│   │   │   ├── TaskList.jsx
+│   │   │   └── EquipmentStatus.jsx
+│   │   │
+│   │   ├── manager/
+│   │   │   ├── ManagerDashboard.jsx
+│   │   │   ├── AssignTasks.jsx
+│   │   │   ├── InventoryManagement.jsx
+│   │   │   └── FinancialOverview.jsx
+│   │   │
+│   │   ├── expert/
+│   │   │   ├── Recommendations.jsx
+│   │   │   ├── FieldVisits.jsx
+│   │   │   ├── DataAnalysis.jsx
+│   │   │   └── KnowledgeBase.jsx
+│   │   │
+│   │   └── owner/
+│   │       ├── OwnerDashboard.jsx
+│   │       ├── ManageFarms.jsx
+│   │       └── ProfitabilityReports.jsx
+│
+│   ├── contexts/                # Global state (Auth/User context)
+│   │   └── AuthContext.js
+│
+│   ├── hooks/                   # Reusable custom hooks
+│   │   └── useAuth.js
+│
+│   ├── services/                # API calls (Axios or fetch)
+│   │   ├── authService.js
+│   │   ├── cropService.js
+│   │   ├── taskService.js
+│   │   └── userService.js
+│
+│   ├── styles/                  # Global styles
+│   │   └── index.css
+│
+│   ├── App.jsx                  # App wrapper + routing
+│   ├── main.jsx                 # ReactDOM render entry
+│   └── config.js                # API endpoints, constants
+│
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+agro-farm-backend/
+├── config/                # Configuration files (e.g., DB, app-level)
+│   ├── dbConfig.js
+│   └── appConfig.js
+│
+├── controllers/          # Route handlers (business logic)
+│   ├── authController.js
+│   ├── cropController.js
+│   ├── equipmentController.js
+│   ├── expertController.js
+│   ├── farmerController.js
+│   ├── farmOwnerController.js
+│   ├── inventoryController.js
+│   ├── irrigationController.js
+│   ├── managerController.js
+│   ├── taskController.js
+│   └── weatherController.js
+│
+├── data/                 # Seed scripts, sample data for testing
+│   ├── sampleUsers.js
+│   ├── sampleFarms.js
+│   └── sampleCrops.js
+│
+├── emails/               # Email templates and logic
+│   ├── templates/
+│   │   └── welcomeEmail.html
+│   └── emailService.js
+│
+├── middleware/           # Auth, error, validation middlewares
+│   ├── authMiddleware.js
+│   ├── errorHandler.js
+│   └── validateRequest.js
+│
+├── models/               # Mongoose schemas
+│   ├── userModel.js
+│   ├── farmerProfileModel.js
+│   ├── managerProfileModel.js
+│   ├── expertProfileModel.js
+│   ├── farmOwnerModel.js
+│   ├── farmModel.js
+│   ├── cropModel.js
+│   ├── taskModel.js
+│   ├── equipmentModel.js
+│   ├── inventoryModel.js
+│   └── weatherModel.js
+│
+├── routes/               # Express routes for each domain
+│   ├── authRoutes.js
+│   ├── cropRoutes.js
+│   ├── equipmentRoutes.js
+│   ├── expertRoutes.js
+│   ├── farmerRoutes.js
+│   ├── farmOwnerRoutes.js
+│   ├── inventoryRoutes.js
+│   ├── irrigationRoutes.js
+│   ├── managerRoutes.js
+│   ├── taskRoutes.js
+│   └── weatherRoutes.js
+│
+├── utils/                # Helper utilities
+│   ├── jwtUtils.js
+│   ├── fileUploadUtils.js
+│   ├── weatherUtils.js
+│   └── pestAlertUtils.js
+│
+├── extra/                # (Optional) For AI, ML models, integrations, custom scripts
+│   ├── ai/
+│   │   └── cropPrediction.js
+│   └── analytics/
+│       └── reportGenerator.js
+│
+├── .env                  # Environment variables (PORT, DB_URI, etc.)
+├── .gitignore
+├── package.json
+├── README.md
+└── server.js             # Entry point
